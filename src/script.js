@@ -44,7 +44,7 @@ const config = {
 };
 
 let score;
-const speed = 0.0015;
+const speed = 0.0018;
 
 const playerAngleInitial = Math.PI;
 let playerAngleMoved;
@@ -980,7 +980,7 @@ function moveOtherVehicles(timeDelta) {
 
 function getPlayerSpeed() {
     if (accelerate) return speed * 2;
-    if (decelerate) return speed * 0.5;
+    if (decelerate) return 0;
     return speed;
 }
 
